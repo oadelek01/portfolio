@@ -264,6 +264,11 @@
     }
 
     focusWindow(win);
+
+    // On phones, open windows full-screen so they fit the small screen
+    if (window.innerWidth <= 640) {
+      win.classList.add("is-maximized");
+    }
   }
 
   function closeWindow(win) {

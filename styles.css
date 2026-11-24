@@ -1231,12 +1231,78 @@ select.sai-input {
    RESPONSIVE
    ===================================================================== */
 @media (max-width: 640px) {
-  body { padding: 8px; align-items: flex-start; }
-  .monitor { margin-top: 8px; }
-  .desktop-icons { flex-direction: row; flex-wrap: wrap; gap: 6px; top: 8px; left: 8px; }
-  .icon { width: 56px; }
-  .icon-label { font-size: 11px; }
-  .about-grid { grid-template-columns: 1fr; }
+  /* ---- page ---- */
+  body { padding: 6px; }
+  .monitor { margin: 0 auto; }
+
+  /* ---- shrink the physical chrome to give the screen more room ---- */
+  .stand, .base { display: none; }
+  .monitor-casing { padding: 10px 8px 6px; border-radius: 16px 16px 12px 12px; }
+  .brand-plate { top: 5px; font-size: 7px; }
+  .chin { padding: 8px 10px 6px; gap: 10px; }
+  .monitor-power { width: 26px; height: 26px; }
+  .monitor-power-led { width: 7px; height: 7px; }
+  .knob { width: 10px; height: 10px; }
+  .vents { height: 10px; }
+  .chin-brand { font-size: 7px; }
+
+  /* ---- boot screen ---- */
+  .boot-inner { padding: 16px; }
+  .boot-ascii { font-size: 7px; }
+  .boot-title { font-size: 12px; }
+  .boot-sub { font-size: 13px; letter-spacing: 0.25em; }
+  .boot-prompt { font-size: 15px; }
+
+  /* ---- desktop ---- */
+  .desktop { padding: 6px; }
+
+  /* ---- icons: one compact row ---- */
+  .desktop-icons { flex-direction: row; flex-wrap: wrap; gap: 3px; top: 4px; left: 4px; }
+  .icon { width: 48px; padding: 4px 2px; gap: 3px; }
+  .icon-glyph svg { width: 24px; height: 24px; }
+  .icon-label { font-size: 10px; letter-spacing: 0.04em; }
+
+  /* ---- intro ---- */
+  .intro { width: 100%; padding: 0 6px; }
+  .intro-now { font-size: 9px; letter-spacing: 0.1em; margin-bottom: 8px; }
+  .intro-name { font-size: 16px; line-height: 1.2; margin-bottom: 8px; }
+  .intro-role { font-size: 11px; letter-spacing: 0.22em; margin-bottom: 10px; }
+  .intro-typed { font-size: 13px; margin-bottom: 12px; }
+  .intro-hint { font-size: 9px; letter-spacing: 0.14em; margin-bottom: 6px; }
+  .intro-status { font-size: 9px; letter-spacing: 0.1em; }
+
+  /* ---- windows ---- */
   .window { min-width: 0; }
-  .intro-name { font-size: 20px; }
+  .window-body { padding: 10px 12px; font-size: 15px; line-height: 1.4; }
+  .win-btn { width: 20px; height: 20px; font-size: 9px; }
+  .project-title, .about-heading { font-size: 18px; }
+  .about-grid { grid-template-columns: 1fr; }
+
+  /* ---- taskbar ---- */
+  .taskbar { padding: 0 6px; gap: 6px; }
+  .taskbar-name { display: none; }
+  .start-btn { padding: 7px 9px; font-size: 8px; }
+  .theme-btn { padding: 5px 7px; font-size: 7px; }
+  .start-menu { min-width: 150px; bottom: 50px; left: 6px; }
+  .start-item { font-size: 15px; padding: 6px 9px; }
+
+  /* ---- SharpAI demo: stack the sidebar above the chat ---- */
+  .sharpai-app { flex-direction: column; min-height: 0; max-height: none; }
+  .sai-sidebar { width: 100%; flex: 0 0 auto; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 6px; padding: 8px 10px; }
+  .sai-brand { margin-bottom: 0; font-size: 14px; }
+  .sai-recent, .sai-item { display: none; }
+  .sai-btn { padding: 7px 10px; font-size: 11px; }
+  .sai-main { padding: 10px 12px; }
+  .sai-badge { width: 44px; height: 44px; }
+  .sai-welcome h3 { font-size: 16px; }
+  .sai-msg { max-width: 90%; }
+
+  /* ---- QueueUp / Olli demos ---- */
+  .qu-header, .olli-header { padding: 12px 14px; }
+  .qu-main, .olli-main { padding: 0 14px 16px; }
+  .qu-business { font-size: 17px; }
+  .qu-big { font-size: 44px; }
+  .qu-num { font-size: 20px; }
+  .olli-feed { max-height: 240px; }
+  .olli-composer { padding: 10px; }
 }
