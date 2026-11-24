@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oluwatitomi Adeleke — Software Engineer</title>
+  <meta name="description" content="Portfolio of Oluwatitomi (Titomi) Adeleke, software engineer. Full-stack web apps and AI-powered tools, presented inside a retro CRT computer." />
+  <meta name="author" content="Oluwatitomi Adeleke" />
+
+  <!-- Social links are set in the CONTACT window below -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ BOOT SCREEN ============ -->
+  <div id="boot-screen" class="boot-screen">
+    <div class="boot-inner">
+      <pre class="boot-ascii" aria-hidden="true">
+   ______________________________
+  /_____________________________/|
+ |  ___________________________  ||
+ | |                           | ||
+ | |   NOSTALGIA  COMPUTER     | ||
+ | |   _____________________   | ||
+ | |  |  POWER                | | ||
+ | |  |   ____   ____   ____  | | ||
+ | |  |  |  _ \ |  _ \ |  _ \ | | ||
+ | |  |  | |_) | | |_) | | |_) | | ||
+ | |  |  |  __/  |  __/  |  _ < | | ||
+ | |  |  |_|     |_|     |_| \_\| | ||
+ | |  |_______________________| | ||
+ | |   _____________________   | ||
+ | |  |  FLOPPY DRIVE        |  | ||
+ | |  |______________________|  | ||
+ | |                           | ||
+ | |___________________________| ||
+ |/_____________________________|/
+      </pre>
+      <h1 class="boot-title">OLUWATITOMI&nbsp;ADELEKE</h1>
+      <p class="boot-sub">SOFTWARE&nbsp;ENGINEER &nbsp;·&nbsp; PORTFOLIO</p>
+      <p class="boot-prompt" id="boot-prompt">PRESS ANY KEY OR THE POWER BUTTON</p>
+      <button id="power-btn" class="power-btn" aria-label="Power on">
+        <span class="power-led"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ============ CRT MONITOR ============ -->
+  <div id="monitor" class="monitor is-hidden">
+    <div class="monitor-casing">
+      <div class="brand-plate">ADELEKE&nbsp;//&nbsp;CRT-90</div>
+      <div class="screen" id="screen">
+        <div class="crt-glass" aria-hidden="true"></div>
+        <div class="crt-scanlines" aria-hidden="true"></div>
+        <div class="crt-vignette" aria-hidden="true"></div>
+
+        <div id="desktop" class="desktop">
+          <!-- boot log overlay -->
+          <div id="boot-log" class="boot-log is-hidden" aria-hidden="true"></div>
+
+          <!-- Desktop intro -->
+          <div id="intro" class="intro">
+            <p class="intro-now">NOW:&nbsp;<span class="intro-now-value">BUILDING SHARPAI — AN AI SPORTS-BETTING ANALYSIS PLATFORM</span></p>
+            <h2 class="intro-name">OLUWATITOMI&nbsp;ADELEKE</h2>
+            <p class="intro-role">SOFTWARE&nbsp;ENGINEER</p>
+            <p class="intro-typed">
+              <span id="typed"></span><span class="caret">█</span>
+            </p>
+            <p class="intro-hint">OPEN AN ICON TO SEE A PAGE</p>
+            <p class="intro-status">OPEN TO ROLES FROM JUNE 2026 &nbsp;·&nbsp; WHITBY, ON</p>
+          </div>
+
+          <!-- Desktop icons -->
+          <div class="desktop-icons">
+            <button class="icon" data-window="home" title="Home">
+              <span class="icon-glyph" data-pixel="home"></span>
+              <span class="icon-label">HOME</span>
+            </button>
+            <button class="icon" data-window="work" title="Work">
+              <span class="icon-glyph" data-pixel="folder"></span>
+              <span class="icon-label">WORK</span>
+            </button>
+            <button class="icon" data-window="about" title="About">
+              <span class="icon-glyph" data-pixel="user"></span>
+              <span class="icon-label">ABOUT</span>
+            </button>
+            <button class="icon" data-window="contact" title="Contact">
+              <span class="icon-glyph" data-pixel="mail"></span>
+              <span class="icon-label">CONTACT</span>
+            </button>
+            <button class="icon" data-window="cv" title="Download CV">
+              <span class="icon-glyph" data-pixel="doc"></span>
+              <span class="icon-label">CV</span>
+            </button>
+          </div>
+
+          <!-- ===== WINDOWS ===== -->
+
+          <!-- WORK -->
+          <div class="window is-hidden" id="win-work" data-title="WORK">
+            <div class="window-titlebar">
+              <span class="window-title">WORK</span>
+              <div class="window-controls">
+                <button class="win-btn win-min" aria-label="Minimize">—</button>
+                <button class="win-btn win-max" aria-label="Maximize">□</button>
+                <button class="win-btn win-close" aria-label="Close">✕</button>
+              </div>
+            </div>
+            <div class="window-body">
+              <p class="window-lead">NEWEST FIRST</p>
+              <div class="work-list">
+                <button class="work-item is-featured" data-project="sharpai">
+                  <span class="work-thumb work-thumb-sharpai" aria-hidden="true"><img src="assets/sharpai-logo.png" alt="SharpAI" /></span>
+                  <span class="work-meta">
+                    <span class="work-name">SHARPAI</span>
+                    <span class="work-tag">SPORT BETTING AI PLATFORM · CAPSTONE</span>
+                    <span class="work-year">2024 – 2025</span>
+                  </span>
+                  <span class="work-arrow">▸</span>
+                </button>
+                <button class="work-item" data-project="queueup">
+                  <span class="work-thumb work-thumb-queueup" aria-hidden="true"><img src="assets/queueup-logo.svg" alt="QueueUp" /></span>
+                  <span class="work-meta">
+                    <span class="work-name">QUEUEUP</span>
+                    <span class="work-tag">REAL-TIME VIRTUAL WAITING ROOM</span>
+                    <span class="work-year">2026</span>
+                  </span>
+                  <span class="work-arrow">▸</span>
+                </button>
+                <button class="work-item" data-project="olli">
+                  <span class="work-thumb work-thumb-olli" aria-hidden="true"><img src="assets/olli-logo.svg" alt="OlliCheer Hub" /></span>
+                  <span class="work-meta">
+                    <span class="work-name">OLLICHEER HUB</span>
+                    <span class="work-tag">SOCIAL PLATFORM FOR SPECIAL-NEEDS YOUTH</span>
+                    <span class="work-year">2023 – 2024</span>
+                  </span>
+                  <span class="work-arrow">▸</span>
+                </button>
+              </div>
+              <p class="window-foot">CLICK A PROJECT TO OPEN ITS CASE STUDY</p>
+            </div>
+          </div>
+
+          <!-- SHARPAI project -->
+          <div class="window is-hidden" id="win-project-sharpai" data-title="SHARPAI">
+            <div class="window-titlebar">
+              <span class="window-title">SHARPAI — SPORT BETTING AI PLATFORM</span>
+              <div class="window-controls">
+                <button class="win-btn win-min" aria-label="Minimize">—</button>
+                <button class="win-btn win-max" aria-label="Maximize">□</button>
+                <button class="win-btn win-close" aria-label="Close">✕</button>
+              </div>
+            </div>
+            <div class="window-body">
+              <div class="project-head">
+                <span class="project-badge">CAPSTONE</span>
+                <span class="project-dates">SEPT 2024 — APRIL 2025</span>
+              </div>
+              <h3 class="project-title">SHARPAI</h3>
+              <p class="project-sub">An AI-driven platform that promotes thoughtful, responsible sports betting with personalized, data-informed insights.</p>
+
+              <div class="project-stack">
+                <span class="chip">REACT</span><span class="chip">NODE.JS</span><span class="chip">EXPRESS</span>
+                <span class="chip">MONGODB</span><span class="chip">PYTHON</span><span class="chip">OPENAI GPT</span>
+                <span class="chip">NLP</span><span class="chip">JWT</span><span class="chip">SPORTSDATA.IO API</span>
+              </div>
+
+              <h4 class="project-h">WHAT IT DOES</h4>
+              <p class="project-p">Users submit a betslip — either as a form or as a photo of a physical slip — and SharpAI returns a full analysis: each team's last five games, injury reports, projections, a recommended bet amount and risk level, and an unbiased conclusion. A chat assistant then answers follow-up questions against that analysis.</p>
+
+              <div class="demo demo-sharpai">
+                <div class="sharpai-app">
+                  <aside class="sai-sidebar">
+                    <div class="sai-brand"><img class="sai-logo-sm" src="assets/sharpai-logo.png" alt="SharpAI logo" />SharpAI</div>
+                    <button class="sai-btn sai-btn-primary" id="sai-new-chat" type="button">+ New Chat</button>
+                    <div class="sai-recent">Recent Conversations</div>
+                    <div class="sai-item sai-item-active">📄 Raptors vs Bulls</div>
+                    <div class="sai-item">📄 Lakers vs Knicks</div>
+                    <div class="sai-item">📄 Celtics vs Heat</div>
+                  </aside>
+                  <div class="sai-main">
+                    <div class="sai-welcome" id="sai-welcome">
+                      <img class="sai-logo-lg" src="assets/sharpai-logo.png" alt="SharpAI logo" />
+                      <h3>Hello, Titomi ✨</h3>
+                      <p>Pick a game to analyze:</p>
+                    </div>
+                    <div class="sai-form" id="sai-form">
+                      <select class="sai-input" id="sai-game">
+                        <option value="" selected disabled>Select a matchup…</option>
+                        <option>Toronto Raptors vs Chicago Bulls</option>
+                        <option>L.A. Lakers vs New York Knicks</option>
+                        <option>Boston Celtics vs Denver Nuggets</option>
+                        <option>Miami Heat vs Milwaukee Bucks</option>
+                        <option>Golden State Warriors vs Phoenix Suns</option>
+                      </select>
+                      <button class="sai-btn sai-btn-primary sai-submit" id="sai-submit" type="button" disabled>Analyze Bet</button>
+                    </div>
+                    <div class="sai-loading" id="sai-loading"><span class="sai-spinner"></span>Analyzing your bet...</div>
+                    <div class="sai-chat" id="sai-chat">
+                      <div class="sai-messages" id="sai-messages"></div>
+                      <div class="sai-input-row">
+                        <input class="sai-input" id="sai-msg" placeholder="Type a message...">
+                        <button class="sai-send" id="sai-send" type="button">➤</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="project-h">WHAT I BUILT</h4>
+              <ul class="project-list">
+                <li>Integrated real-time odds and sports data from third-party APIs (SportsDataIO), keeping recommendations accurate and current.</li>
+                <li>Leveraged Python-based AI models and natural-language processing (OpenAI GPT) to analyze historical performance and generate recommendations.</li>
+                <li>Improved data-processing efficiency by <strong>30%</strong> through back-end optimization, cutting time-to-recommendation.</li>
+                <li>Built a React front end with a clean, user-friendly interface, JWT auth, and persistent conversations in MongoDB.</li>
+                <li>Implemented vision-based betslip parsing (GPT-4o-mini + Zod structured output) to read a photo of a slip automatically.</li>
+                <li>Applied strict testing protocols for reliability, accessibility, and compliance.</li>
+              </ul>
+
+              <div class="project-tools">TOOLS: REACT · NODE.JS · EXPRESS · MONGODB · OPENAI · SPORTSDATA.IO · JWT · MULTER</div>
+            </div>
+          </div>
+
+          <!-- QUEUEUP project -->
+          <div class="window is-hidden" id="win-project-queueup" data-title="QUEUEUP">
+            <div class="window-titlebar">
+              <span class="window-title">QUEUEUP — REAL-TIME WAITING ROOM</span>
+              <div class="window-controls">
+                <button class="win-btn win-min" aria-label="Minimize">—</button>
+                <button class="win-btn win-max" aria-label="Maximize">□</button>
+                <button class="win-btn win-close" aria-label="Close">✕</button>
+              </div>
+            </div>
+            <div class="window-body">
+              <div class="project-head">
+                <span class="project-badge">PROJECT</span>
+                <span class="project-dates">AUG 2026 — NOV 2026</span>
+              </div>
+              <h3 class="project-title">QUEUEUP</h3>
+              <p class="project-sub">A real-time virtual waiting room that lets people join a queue through a shareable link or QR code and watch their position and estimated wait time live.</p>
+
+              <div class="project-stack">
+                <span class="chip">TYPESCRIPT</span><span class="chip">REACT</span><span class="chip">CLOUDFLARE WORKERS</span>
+                <span class="chip">DURABLE OBJECTS</span><span class="chip">VITE</span><span class="chip">GIT</span>
+              </div>
+
+              <h4 class="project-h">WHAT IT DOES</h4>
+              <p class="project-p">A host creates a waiting room and shares a link or QR code. Users join, watch their live position and estimated wait time, and are let through when it's their turn — all tracked across Cloudflare Workers and Durable Objects.</p>
+
+              <div class="demo demo-queueup">
+                <div class="queueup-app">
+                  <div class="qu-header">
+                    <div class="qu-wordmark"><span class="qu-mark">≡</span>QueueUp</div>
+                    <span class="qu-home">← Home</span>
+                  </div>
+                  <div class="qu-main">
+                    <div class="qu-title">
+                      <p class="qu-kicker">Virtual waiting room</p>
+                      <h3 class="qu-business">Maple Dental Clinic</h3>
+                    </div>
+                    <div class="qu-card">
+                      <div class="qu-join" id="qu-join">
+                        <div class="qu-icon">＋</div>
+                        <h4>Join the queue</h4>
+                        <p>2 people are currently waiting.</p>
+                        <input class="qu-input" id="qu-name" placeholder="e.g. Alex Rivera" />
+                        <button class="qu-btn qu-btn-primary" id="qu-join-btn" disabled>Join Queue</button>
+                      </div>
+                      <div class="qu-status" id="qu-status">
+                        <div class="qu-status-top">
+                          <span class="qu-muted">You're in line</span>
+                          <span class="qu-live"><span class="qu-dot"></span>Live</span>
+                        </div>
+                        <div class="qu-position">
+                          <span class="qu-muted">Your position</span>
+                          <span class="qu-big" id="qu-position">#3</span>
+                        </div>
+                        <div class="qu-grid">
+                          <div class="qu-tile"><span class="qu-muted">People ahead</span><span class="qu-num" id="qu-ahead">2</span></div>
+                          <div class="qu-tile"><span class="qu-muted">Est. wait</span><span class="qu-num" id="qu-wait">~6 min</span></div>
+                        </div>
+                        <button class="qu-btn qu-btn-danger" id="qu-leave-btn">Leave Queue</button>
+                      </div>
+                      <div class="qu-serve" id="qu-serve">
+                        <div class="qu-serve-icon">✓</div>
+                        <h4>It's your turn!</h4>
+                        <p>You're now being served. Please head to the front desk.</p>
+                        <button class="qu-btn qu-btn-outline" id="qu-done-btn">Done</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="project-h">WHAT I BUILT</h4>
+              <ul class="project-list">
+                <li>Developed a real-time virtual waiting room with shareable links and QR-code entry, tracking each user's queue position and estimated wait time.</li>
+                <li>Leveraged Cloudflare Workers and Durable Objects for backend queue management and consistent real-time state across concurrent users.</li>
+                <li>Built an interactive React + TypeScript front end with live queue-status updates and an admin dashboard for monitoring and managing waiting rooms.</li>
+              </ul>
+
+              <div class="project-tools">TOOLS: TYPESCRIPT · REACT · CLOUDFLARE WORKERS · DURABLE OBJECTS · VITE · GIT</div>
+            </div>
+          </div>
+
+          <!-- OLLI project -->
+          <div class="window is-hidden" id="win-project-olli" data-title="OLLICHEER HUB">
+            <div class="window-titlebar">
+              <span class="window-title">OLLICHEER HUB — SOCIAL PLATFORM</span>
+              <div class="window-controls">
+                <button class="win-btn win-min" aria-label="Minimize">—</button>
+                <button class="win-btn win-max" aria-label="Maximize">□</button>
+                <button class="win-btn win-close" aria-label="Close">✕</button>
+              </div>
+            </div>
+            <div class="window-body">
+              <div class="project-head">
+                <span class="project-badge">CLIENT PROJECT</span>
+                <span class="project-dates">SEPT 2023 — APRIL 2024</span>
+              </div>
+              <h3 class="project-title">OLLICHEER HUB</h3>
+              <p class="project-sub">A full-stack web app built with a real-world client to support older children with special needs through community and connection.</p>
+
+              <div class="project-stack">
+                <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JAVASCRIPT</span>
+                <span class="chip">NODE.JS</span><span class="chip">AWS</span>
+              </div>
+
+              <h4 class="project-h">WHAT IT DOES</h4>
+              <p class="project-p">A social space for older children with special needs, built alongside a real client. Members share posts on an Instagram-style feed and chat in real time, with an accessible, easy-to-navigate interface.</p>
+
+              <div class="demo demo-olli">
+                <div class="olli-app">
+                  <div class="olli-header">
+                    <div class="olli-brand"><img class="olli-logo" src="assets/olli-logo.svg" alt="OlliCheer Hub" />OlliCheer Hub</div>
+                    <span class="olli-tagline">A place to connect &amp; cheer</span>
+                  </div>
+                  <div class="olli-main">
+                    <div class="olli-composer">
+                      <span class="olli-avatar olli-avatar-me">T</span>
+                      <input class="olli-input" id="olli-input" placeholder="Share something positive…" />
+                      <button class="olli-post-btn" id="olli-post">Post</button>
+                    </div>
+                    <div class="olli-feed" id="olli-feed">
+                      <div class="olli-post">
+                        <div class="olli-post-head">
+                          <span class="olli-avatar" style="background:#f59e0b">S</span>
+                          <span class="olli-post-name">Sam <em class="olli-time">· 2h</em></span>
+                        </div>
+                        <p class="olli-post-body">So excited for game night! 🎉</p>
+                        <div class="olli-actions"><span>❤️ 12</span><span>💬 3</span></div>
+                      </div>
+                      <div class="olli-post">
+                        <div class="olli-post-head">
+                          <span class="olli-avatar" style="background:#8b5cf6">C</span>
+                          <span class="olli-post-name">Coach <em class="olli-time">· 5h</em></span>
+                        </div>
+                        <p class="olli-post-body">Reminder: practice is at 4pm tomorrow. See you there! 🏀</p>
+                        <div class="olli-actions"><span>❤️ 8</span><span>💬 1</span></div>
+                      </div>
+                      <div class="olli-post">
+                        <div class="olli-post-head">
+                          <span class="olli-avatar" style="background:#10b981">M</span>
+                          <span class="olli-post-name">Maya <em class="olli-time">· 1d</em></span>
+                        </div>
+                        <p class="olli-post-body">I made a new friend at today's meetup! 😊</p>
+                        <div class="olli-actions"><span>❤️ 21</span><span>💬 6</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="project-h">WHAT I BUILT</h4>
+              <ul class="project-list">
+                <li>Coded the front end with HTML, CSS, and JavaScript and the back end with Node.js, ensuring a responsive, accessible interface.</li>
+                <li>Developed an Instagram-style social feed and a real-time chat system to promote community and engagement.</li>
+                <li>Deployed on AWS, integrating continuous client feedback to enhance accessibility, scalability, and reliability.</li>
+              </ul>
+
+              <div class="project-tools">TOOLS: HTML · CSS · JAVASCRIPT · NODE.JS · AWS</div>
+            </div>
+          </div>
+
+          <!-- ABOUT -->
+          <div class="window is-hidden" id="win-about" data-title="ABOUT">
+            <div class="window-titlebar">
+              <span class="window-title">ABOUT ME</span>
+              <div class="window-controls">
+                <button class="win-btn win-min" aria-label="Minimize">—</button>
+                <button class="win-btn win-max" aria-label="Maximize">□</button>
+                <button class="win-btn win-close" aria-label="Close">✕</button>
+              </div>
+            </div>
+            <div class="window-body">
+              <h3 class="about-heading">SOFTWARE ENGINEER</h3>
+              <p class="project-p">Software engineering student at Western University graduating in 2026. I build full-stack web applications and AI-powered tools — from an AI sports-betting analysis platform to a real-time virtual waiting room. I care about clean, tested, accessible software that solves a real problem.</p>
+
+              <div class="about-grid">
+                <div class="about-col">
+                  <h4 class="project-h">EDUCATION</h4>
+                  <p class="about-item">
+                    <strong>WESTERN UNIVERSITY</strong><br />
+                    London, ON — Bachelor of Engineering, Software<br />
+                    <span class="about-dates">SEPT 2021 — JUNE 2026</span>
+                  </p>
+                  <p class="about-item">
+                    <strong>RELEVANT COURSES</strong><br />
+                    Cloud Computing (Docker, Kubernetes) · Artificial Intelligence II (Python)
+                  </p>
+
+                  <h4 class="project-h">EXPERIENCE</h4>
+                  <p class="about-item">
+                    <strong>JUNIOR SOFTWARE DEVELOPER</strong><br />
+                    Genesis Insurance Brokers Group — Toronto, CA<br />
+                    <span class="about-dates">JUNE 2025 — OCT 2025</span>
+                  </p>
+                  <ul class="project-list about-list">
+                    <li>Resolved support tickets for Linux server performance, database errors, and AWS resource allocation.</li>
+                    <li>Used PuTTY for secure remote access and troubleshooting of Linux environments.</li>
+                    <li>Assisted in deploying and maintaining AWS services (EC2, S3, RDS, IAM) for scalable team projects.</li>
+                    <li>Monitored and optimized databases for availability and reliability.</li>
+                    <li>Collaborated to document solutions, track progress, and close tickets efficiently.</li>
+                  </ul>
+                </div>
+
+                <div class="about-col">
+                  <h4 class="project-h">SKILLS</h4>
+                  <p class="about-item"><strong>LANGUAGES</strong><br />Java, C, C++, Python, SQL, JavaScript, HTML, CSS</p>
+                  <p class="about-item"><strong>TOOLS</strong><br />Figma, Git, Unix, React.js, Node.js, Express, MongoDB, Django, Microsoft Office</p>
+                  <p class="about-item"><strong>SOFT SKILLS</strong><br />Communication, Teamwork, Client Relations, Analytical Thinking, Time Management, Leadership</p>
+
+                  <h4 class="project-h">TIMELINE</h4>
+                  <ul class="timeline">
+                    <li><span class="tl-year">2021</span> Started Software Engineering at Western University.</li>
+                    <li><span class="tl-year">2024</span> Built OlliCheer Hub, a social platform for special-needs youth.</li>
+                    <li><span class="tl-year">2025</span> Shipped SharpAI capstone — an AI sports-betting analysis platform. Internship at Genesis Insurance Brokers Group.</li>
+                    <li><span class="tl-year">2026</span> Built QueueUp, a real-time virtual waiting room. Graduating in June.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTACT -->
+          <div class="window is-hidden" id="win-contact" data-title="CONTACT">
+            <div class="window-titlebar">
+              <span class="window-title">CONTACT</span>
+              <div class="window-controls">
+                <button class="win-btn win-min" aria-label="Minimize">—</button>
+                <button class="win-btn win-max" aria-label="Maximize">□</button>
+                <button class="win-btn win-close" aria-label="Close">✕</button>
+              </div>
+            </div>
+            <div class="window-body">
+              <h3 class="about-heading">GET IN TOUCH</h3>
+              <p class="project-p">Open to new-graduate software engineering roles and freelance work. I usually reply within a day or two.</p>
+              <ul class="contact-list">
+                <li>
+                  <span class="contact-key">EMAIL</span>
+                  <a class="contact-val" href="mailto:titomiadeleke07@gmail.com">titomiadeleke07@gmail.com</a>
+                </li>
+                <li>
+                  <span class="contact-key">PHONE</span>
+                  <a class="contact-val" href="tel:+14169703473">+1 (416) 970-3473</a>
+                </li>
+                <li>
+                  <span class="contact-key">LOCATION</span>
+                  <span class="contact-val">Whitby, Ontario, Canada</span>
+                </li>
+                <li>
+                  <span class="contact-key">LINKEDIN</span>
+                  <a class="contact-val" href="https://www.linkedin.com/in/joshuaadeleke/" target="_blank" rel="noopener">linkedin.com/in/joshuaadeleke</a>
+                </li>
+                <li>
+                  <span class="contact-key">GITHUB</span>
+                  <a class="contact-val" href="https://github.com/oadelek01" target="_blank" rel="noopener">github.com/oadelek01</a>
+                </li>
+              </ul>
+              <div class="contact-cv">
+                <a class="btn-download" href="assets/Oluwatitomi-Adeleke-CV.pdf" download>⬇ DOWNLOAD CV</a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /desktop -->
+
+        <!-- OS Taskbar (inside the CRT screen) -->
+        <div class="taskbar">
+          <button class="start-btn" id="start-btn" aria-label="Start menu">▦&nbsp;START</button>
+          <span class="taskbar-name">ADELEKE.EXE</span>
+          <div class="taskbar-right">
+            <button class="theme-btn" id="theme-btn" title="Switch screen color" aria-label="Switch screen color">PHOSPHOR</button>
+            <span class="taskbar-clock" id="clock">00:00</span>
+          </div>
+        </div>
+
+        <!-- Start menu (inside the CRT screen) -->
+        <div id="start-menu" class="start-menu is-hidden">
+          <button class="start-item" data-window="home">HOME</button>
+          <button class="start-item" data-window="work">WORK</button>
+          <button class="start-item" data-window="about">ABOUT</button>
+          <button class="start-item" data-window="contact">CONTACT</button>
+          <button class="start-item" data-window="cv">DOWNLOAD CV</button>
+          <div class="start-divider"></div>
+          <button class="start-item" id="start-power">SHUT DOWN</button>
+        </div>
+      </div><!-- /screen -->
+
+      <!-- Monitor chin: power button, knobs, vents, brand -->
+      <div class="chin">
+        <div class="chin-controls">
+          <button class="monitor-power" id="monitor-power" aria-label="Power off">
+            <span class="monitor-power-led"></span>
+          </button>
+          <span class="knob" aria-hidden="true"></span>
+          <span class="knob" aria-hidden="true"></span>
+        </div>
+        <div class="vents" aria-hidden="true"></div>
+        <div class="chin-brand">ADELEKE</div>
+      </div>
+    </div><!-- /monitor-casing -->
+
+    <!-- Stand + base -->
+    <div class="stand"></div>
+    <div class="base"></div>
+  </div><!-- /monitor -->
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="olliGrad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffb648"/>
+      <stop offset="1" stop-color="#ff5f7a"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="8" fill="url(#olliGrad)"/>
+  <g fill="#ffffff">
+    <circle cx="11" cy="13" r="2.2"/>
+    <circle cx="21" cy="13" r="2.2"/>
+  </g>
+  <path d="M9.5 20.5c2.3 2.3 4.3 3.2 6.5 3.2s4.2-.9 6.5-3.2" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round"/>
+</svg>

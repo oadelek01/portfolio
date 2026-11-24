@@ -1,0 +1,8 @@
+# Wrangler / Node state
+.wrangler/
+node_modules/
+.dev.vars*
+.env*
+
+# macOS
+.DS_Store
