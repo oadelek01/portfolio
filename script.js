@@ -116,7 +116,7 @@
     "I build full-stack web apps and AI-powered tools.",
     "Python, JavaScript, React, Node.js, AWS.",
     "From AI sports-betting analysis to real-time waiting rooms.",
-    "Open to new-graduate software engineering roles.",
+    "Open to software engineering roles.",
   ];
   let phraseIndex = 0;
   let charIndex = 0;
@@ -129,20 +129,20 @@
       typedEl.textContent = current.slice(0, charIndex);
       if (charIndex === current.length) {
         deleting = true;
-        setTimeout(typeLoop, 1600);
+        setTimeout(typeLoop, 2800);
         return;
       }
-      setTimeout(typeLoop, 34);
+      setTimeout(typeLoop, 80);
     } else {
       charIndex--;
       typedEl.textContent = current.slice(0, charIndex);
       if (charIndex === 0) {
         deleting = false;
         phraseIndex = (phraseIndex + 1) % PHRASES.length;
-        setTimeout(typeLoop, 300);
+        setTimeout(typeLoop, 500);
         return;
       }
-      setTimeout(typeLoop, 16);
+      setTimeout(typeLoop, 35);
     }
   }
 
